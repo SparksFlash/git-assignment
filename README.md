@@ -4,10 +4,16 @@
 
 ```bash
 git init
+git status
+git add .
+git commit -m "initial commit"
 git branch
-git checkout
-git merge
-git rebase
+git checkout -b feature/login
+git checkout -b bugfix/login-error
+git merge feature/login
+git rebase main
+git log --oneline
+git push origin main
 ```
 
 ## Images
